@@ -1,10 +1,9 @@
 <!DOCTYPE html> <html lang="en">
 	<head><meta charset="utf-8">
 		<title>shady - IT consultant</title>
-
-		<style media="all">html,body{padding:0;margin:0;min-height:100%;height:100%}body{background-color:#CFDD83;font-family:"Lucida Console",Monaco,monospace;color:#000;position:relative}.dynamo div{text-align:center}.nan{margin-left:30px}li{list-style:hiragana;margin-bottom:20px}@media (max-height:700px){header{bottom:0!important;top:auto!important}}@media (max-width:999px){header{position:relative;height:250px;padding:0;width:100%;background-size:contain}header h1{padding-top:40px;padding-left:200px;font-size:3em}header nav{padding-left:200px}.container{padding:40px;margin:0;width:100%}}@media (min-width:1000px) and (max-width:1239px){header{position:fixed;top:40px;left:660px;height:500px;padding:0;width:340px;background-position:left bottom;background-size:260px 333px}header h1{padding-left:120px;font-size:2em}header nav{padding-left:120px}.container{padding:40px;margin:0 40px;width:680px}}@media (min-width:1240px){header{position:fixed;top:200px;left:640px;height:400px;padding:90px 0 0 270px;width:610px;background-size:contain}header h1{font-size:3em}.container{padding:40px;margin:0 40px;width:680px}}header{text-align:center;color:#574843;background-image:url("img/halloy.svg");background-repeat:no-repeat;z-index:9999;box-sizing:border-box}header h1{margin:0}footer{text-align:right;padding:10px;background:rgba(255,255,255,0.2);color:#574843;margin-top:-40px;z-index:9999;position:relative}nav ul{list-style:none;padding:0}nav li{display:inline}.container{min-height:760px;box-sizing:border-box;height:100%;font-size:12px;line-height:18px;background:#fff;position:relative}pre{display:block;font-family:"Lucida Console",Monaco,monospace}.value{color:#080}a{border:none;cursor:pointer;color:inherit!important;text-decoration:none;border-bottom:1px solid #080}</style>
-		<meta name="referrer" content="no-referrer"><link rel="canonical" href="https://shady.straja.org/"><meta http-equiv="content-security-policy" content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"><style>img[src="data:,"],source[src="data:,"]{display:none!important}</style></head>
-
+		<style media="all">html,body{padding:0;margin:0;min-height:100%;height:100%}body{background-color:#CFDD83;font-family:"Lucida Console",Monaco,monospace;color:#000;position:relative}.dynamo div{text-align:center}.nan{margin-left:30px}li{list-style:hiragana;margin-bottom:20px}@media (max-height:700px){header{bottom:0!important;top:auto!important}}@media (max-width:999px){header{position:relative;height:250px;padding:0;width:100%;background-size:contain}header h1{padding-top:40px;padding-left:200px;font-size:3em}header nav{padding-left:200px}.container{padding:40px;margin:0;width:100%}}@media (min-width:1000px) and (max-width:1239px){header{position:fixed;top:40px;left:660px;height:500px;padding:0;width:340px;background-position:left bottom;background-size:260px 333px}header h1{padding-left:120px;font-size:2em}header nav{padding-left:120px}.container{padding:40px;margin:0 40px;width:680px}}@media (min-width:1240px){header{position:fixed;top:200px;left:640px;height:400px;padding:90px 0 0 270px;width:610px;background-size:contain}header h1{font-size:3em}.container{padding:40px;margin:0 40px;width:680px}}header{text-align:center;color:#574843;background-image:url("img/halloy.svg");background-repeat:no-repeat;z-index:9999;box-sizing:border-box}header h1{margin:5px}footer{text-align:right;padding:10px;background:rgba(255,255,255,0.2);color:#574843;margin-top:-40px;z-index:9999;position:relative}nav ul{list-style:none;padding:0}nav li{display:inline}.container{min-height:760px;box-sizing:border-box;height:100%;font-size:12px;line-height:18px;background:#fff;position:relative}pre{display:block;font-family:"Lucida Console",Monaco,monospace}.value{color:#080}a{border:none;cursor:pointer;color:inherit!important;text-decoration:none;border-bottom:1px solid #080}</style>
+		<meta name="referrer" content="no-referrer"><link rel="canonical" href="https://shady.straja.org/"><meta http-equiv="content-security-policy" content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'self'; object-src 'self' data:; frame-src 'self' data:;"><style>img[src="data:,"],source[src="data:,"]{display:none!important}</style></head>
+		<meta http-equiv="content-security-policy" content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'self'; object-src 'self' data:; frame-src 'self' data:;">
 <body>
 
 <header>
@@ -67,75 +66,5 @@
 <footer>
 	All <span class="dynamo" data-lines="You, Copylefts, Crashes, CRLFS, Cypherpunks, Characters, Case mods" style="height:22px;display:inline-block;position:relative;overflow:hidden;vertical-align:bottom;text-align:left"><div>You</div><div>Codes</div><div>Copylefts</div><div> Crashes</div><div> CRLFS</div><div> Cypherpunks</div><div> Characters</div><div> Case mods</div></span> Are<span class="nan">Beautiful</span>
 </footer>
-<script>
-	;(function(){
-		function initDynamo(el){
-			if (el._inited) return;
-			el._inited = true;
-
-			const delay    = parseInt(el.dataset.delay, 10) || 3000;
-			const speed    = parseInt(el.dataset.speed, 10) || 350;
-			const lines    = (el.dataset.lines || '').split(el.dataset.delimiter || ',');
-			const callback = typeof window[el.dataset.callback] === 'function'
-					? window[el.dataset.callback]
-					: () => {};
-			const centered = el.dataset.center === 'true';
-
-			// Basic styles
-			el.innerHTML = '';
-			el.style.position = 'relative';
-			el.style.overflow = 'hidden';
-			el.style.display = 'inline-block';
-			el.style.verticalAlign = 'bottom';
-			if (centered) el.style.textAlign = 'center';
-
-			// Create individual line divs
-			lines.forEach((txt, i) => {
-				const d = document.createElement('div');
-				d.textContent = txt.trim();
-				d.style.margin = '0';
-				d.style.transition = `margin-top ${speed}ms ease`;
-				if (i === 0) d.dataset.trigger = 'true';
-				el.appendChild(d);
-			});
-
-			const getChildren = () => Array.from(el.children);
-			const height = el.firstElementChild.getBoundingClientRect().height;
-			el.style.height = height + 'px';
-
-			function animate(){
-				const first = el.firstElementChild;
-				first.style.marginTop = `-${height}px`;
-
-				// After transition ends, move first to end and reset margin
-				first.addEventListener('transitionend', function onEnd(){
-					first.removeEventListener('transitionend', onEnd);
-					first.style.transition = 'none';
-					first.style.marginTop = '0';
-					el.appendChild(first);
-					// Force reflow then restore transition
-					void first.offsetHeight;
-					first.style.transition = `margin-top ${speed}ms ease`;
-
-					if (first.dataset.trigger === 'true') callback();
-				});
-			}
-
-			setInterval(animate, delay);
-		}
-
-		document.addEventListener('DOMContentLoaded', () => {
-			document.querySelectorAll('.dynamo').forEach(initDynamo);
-		});
-
-		window.dynamoInit = initDynamo;
-	})();
-
-
-</script>
-
-
-
-
-
+<script src="js/dynamo.js"></script>
 </body></html>
