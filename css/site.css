@@ -48,8 +48,6 @@ nav li {
 .container {
     min-height: 760px;
     height: auto;
-    overflow: auto;
-    flex: 1 0 auto;
     font-size: 14px;
     line-height: 20px;
     background: var(--container-bg);
