@@ -29,7 +29,6 @@
             el.appendChild(d);
         });
 
-        const getChildren = () => Array.from(el.children);
         const height = el.firstElementChild.getBoundingClientRect().height;
         el.style.height = height + 'px';
 
@@ -37,13 +36,11 @@
             const first = el.firstElementChild;
             first.style.marginTop = `-${height}px`;
 
-            // After transition ends, move first to end and reset margin
             first.addEventListener('transitionend', function onEnd(){
                 first.removeEventListener('transitionend', onEnd);
                 first.style.transition = 'none';
                 first.style.marginTop = '0';
                 el.appendChild(first);
-                // Force reflow then restore transition
                 void first.offsetHeight;
                 first.style.transition = `margin-top ${speed}ms ease`;
 
