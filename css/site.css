@@ -48,6 +48,8 @@ nav li {
 .container {
     min-height: 760px;
     height: auto;
+    overflow: auto;
+    flex: 1 0 auto;
     font-size: 14px;
     line-height: 20px;
     background: var(--container-bg);
@@ -89,12 +91,16 @@ header h1 {
 footer {
     text-align: right;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     color: var(--header-text-color);
     margin-top: -40px;
     z-index: 9999;
     position: relative;
     flex-shrink: 0;
+}
+
+.break-mobile {
+    display: none;
 }
 
 /* =============================
@@ -105,6 +111,9 @@ footer {
     header {
         bottom: 0 !important;
         top: auto !important;
+    }
+    footer {
+        text-align: center;
     }
 }
 
@@ -132,7 +141,16 @@ footer {
     .container {
         padding: 2%;
         margin: 0;
-        width: 100%;
+        /*width: 100%;*/
+        font-size: 12px;
+    }
+
+    footer {
+        text-align: center;
+        background-color: var(--bg-color);
+    }
+    .break-mobile {
+        display: inline;
     }
 }
 
@@ -186,6 +204,6 @@ footer {
     .container {
         padding: 40px;
         margin: 0 40px;
-        width: 680px;
+        width: 580px;
     }
 }
